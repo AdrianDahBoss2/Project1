@@ -3,7 +3,7 @@ Authors: Adrian Barno
 Last Modified: April 11th
 The purpose of this program is to create a digital library that users can add, delete, search, check out, or return books.
 
-A file named 'catalog.txt' is required with the contents of:
+To run the program, a file named 'catalog.txt' is required with the contents of but not limited to:
 [
     {
         "title": "Pride and Prejudice",
@@ -24,10 +24,33 @@ A file named 'catalog.txt' is required with the contents of:
         "available": true
     }
 ]
-
 '''
 
 import json
+
+def main():
+    print('Hello, Welcome to Kresge Library!')
+    while True:
+        print("\n1. Add Book\n2. Delete Book \n3. Search\n4. Check Out\n5. Return\n6. Save and Exit (Press Enter)")
+        try: 
+            choice = int(input('Enter choice: '))
+            if choice == 1:
+                choice1()
+            elif choice == 2:
+                choice2()
+            elif choice == 3:
+                choice3()
+            elif choice == 4:
+                choice4()
+            elif choice == 5:
+                choice5()
+            elif choice == 6:
+                choice6()
+                break
+            else:
+                print('Invalid input! Please select options 1-6!')
+        except ValueError:
+            print('Invalid input! Please select options 1-6!')
 
 # Block that brings user back to the main function.
 def back():
@@ -298,29 +321,5 @@ def choice5():
 def choice6():
     print('Have a great day!')
 
-# Main function.
-def main():
-    print('Hello, Welcome to Kresge Library!')
-    while True:
-        print("\n1. Add Book\n2. Delete Book \n3. Search\n4. Check Out\n5. Return\n6. Save and Exit (Press Enter)")
-        try: 
-            choice = int(input('Enter choice: '))
-            if choice == 1:
-                choice1()
-            elif choice == 2:
-                choice2()
-            elif choice == 3:
-                choice3()
-            elif choice == 4:
-                choice4()
-            elif choice == 5:
-                choice5()
-            elif choice == 6:
-                choice6()
-                break
-            else:
-                print('Invalid input! Please select options 1-6!')
-        except ValueError:
-            print('Invalid input! Please select options 1-6!')
-            
-main()
+if __name__ == "__main__":         
+    main()
