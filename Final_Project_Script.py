@@ -1,6 +1,6 @@
 '''
 Authors: Adrian Barno
-Last Modified: April 11th
+Last Modified: December 13th, 2025
 The purpose of this program is to create a digital library that users can add, delete, search, check out, or return books.
 
 To run the program, a file named 'catalog.txt' is required with the contents of but not limited to:
