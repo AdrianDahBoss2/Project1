@@ -31,7 +31,7 @@ import json
 def main():
     print('Hello, Welcome to Kresge Library!')
     while True:
-        print("\n1. Add Book\n2. Delete Book \n3. Search\n4. Check Out\n5. Return\n6. Save and Exit (Ctrl D)")
+        print("\n1. Add Book\n2. Delete Book \n3. Search\n4. Check Out\n5. Return\n6. Save and Exit (Ctrl + D)")
         try:
             choice = int(input('Enter choice: '))
             if choice == 1:
